@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luxury Brand Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1, h2 {
+      color: #5a3e7b;
+      text-align: center;
+    }
+    form, .form-container {
+      background-color: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      box-sizing: border-box; /* Ensures padding doesn't increase total width */
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #666;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    textarea {
+      width: calc(100% - 20px); /* Adjust for padding */
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    button {
+      background-color: #5a3e7b;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #7a50a1;
+      transform: translateY(-2px);
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(90, 62, 123, 0.75), rgba(0, 0, 0, 0));
+      width: 100%;
+      max-width: 500px;
+      margin: 30px 0;
+    }
+    #userInfo {
+      background-color: #e9e9e9;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
+      box-sizing: border-box;
+    }
+    #userInfo h2 {
+      margin-top: 0;
+      color: #5a3e7b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #userInfo p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+    #userInfo span {
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Luxury Brand Products Feedback</h1>
+  <div class="form-container">
+    <h2>Provide Your Feedback</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" placeholder="Your Age" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <label for="job">Job:</label>
+    <input type="text" id="job" placeholder="Your Job" required>
+
+    <label for="designation">Designation:</label>
+    <input type="text" id="designation" placeholder="Your Designation" required>
+
+    <label for="productType">Product Type:</label>
+    <select id="productType" required>
+      <option value="perfume">Perfume</option>
+      <option value="cream">Cream</option>
+      <option value="oils">Oils</option>
+    </select>
+
+    <label for="feedbackText">Feedback:</label>
+    <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here" required></textarea>
+
+    <button id="submitBtn">Submit Feedback</button>
+  </div>
+
+  <hr>
+
+  <!-- The userInfo div will now be populated entirely by JavaScript -->
+  <div id="userInfo" style="display: none;"></div>
+
+  <script src="./product_survey.js"></script>
+</body>
+</html>
