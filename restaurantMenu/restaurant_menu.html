@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* Using Inter font */
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f7f6; /* Light grey background */
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh; /* Ensure body takes full viewport height */
+    }
+    h1 {
+      color: #3f51b5; /* Deep blue for main title */
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5em; /* Larger title */
+      font-weight: 700;
+    }
+    h2 {
+      color: #4a67e4; /* Lighter blue for section titles */
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      font-weight: 600;
+    }
+    .menu-section {
+      background-color: #ffffff; /* White background for menu cards */
+      padding: 25px;
+      border-radius: 12px; /* Rounded corners */
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      width: 100%;
+      max-width: 600px; /* Max width for readability */
+      margin-bottom: 30px;
+      box-sizing: border-box; /* Include padding in width */
+    }
+    .total-items {
+      font-weight: 600;
+      color: #666;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 1.1em;
+    }
+    .menu-items p {
+      background-color: #e8f0fe; /* Light blue background for items */
+      padding: 12px 15px;
+      margin: 8px 0;
+      border-radius: 8px; /* Rounded corners for items */
+      font-size: 1.05em;
+      color: #333;
+      border-left: 5px solid #4a67e4; /* Blue left border for emphasis */
+      transition: background-color 0.3s ease;
+    }
+    .menu-items p:hover {
+      background-color: #d1e1fc; /* Darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Restaurant Menu Iteration</h1>
+
+  <div class="menu-section">
+    <h2>Breakfast Menu</h2>
+    <div id="breakfastTotalItems" class="total-items"></div>
+    <div id="breakfastMenuItems" class="menu-items"></div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Main Course Menu</h2>
+    <div id="maincourseTotalItems" class="total-items"></div>
+    <div id="maincourseMenuItems" class="menu-items"></div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Dessert Menu</h2>
+    <div id="dessertTotalItems" class="total-items"></div>
+    <div id="dessertMenuItems" class="menu-items"></div>
+  </div>
+
+  <script src="./restaurant_menu.js"></script>
+</body>
+</html>
