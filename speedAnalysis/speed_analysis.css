@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #191b1aec;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0d3630;
+    margin-bottom: 30px;
+  }
+  
+  /* Test Area Styles */
+  .test-area {
+    background-color: #d8eae5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .text-box {
+    width: 96%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    flex: 1;
+  }
+  
+  .start-btn {
+    background-color: #ddd539;
+    color: white;
+  }
+  
+  .start-btn:hover {
+    background-color: #aea82d;
+  }
+  
+  .end-btn {
+    background-color: #d854c4;
+    color: white;
+  }
+  
+  .end-btn:hover {
+    background-color: #943987;
+  }
+  
+  /* Results Styles */
+  .results {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #ac1f7f;
+  }
+  
+  .results h2 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .results p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+    
+    .button-group {
+      flex-direction: column;
+    }
+    
+    .btn {
+      width: 100%;
+    }
+  }

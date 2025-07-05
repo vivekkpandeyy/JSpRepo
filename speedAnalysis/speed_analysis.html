@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Test Analysis</title>
+  <link rel="stylesheet" href="./speed_analysis.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speed Typing Analysis</h1>
+    <div class="test-area">
+      <label for="inputText">Type the following text:</label>
+      <textarea id="inputText" class="text-box" readonly placeholder="Get ready to type..."></textarea>
+      
+      <label for="userInput">Your typing:</label>
+      <textarea id="userInput" class="text-box" placeholder="Start typing when ready"></textarea>
+      
+      <div class="button-group">
+        <button class="btn start-btn" onclick="startTest()">Start Test</button>
+        <button class="btn end-btn" onclick="endTest()" id="btn">End Test</button>
+      </div>
+    </div>
+    
+    <div id="output" class="results"></div>
+  </div>
+  <script src="./speed_analysis.js"></script>
+</body>
+</html>
