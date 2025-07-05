@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugger</title>
+    <link rel="stylesheet" href="./debug_code.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Debugger</h1>
+        <div class="input-group">
+            <label for="input1">Enter Number 1:</label>
+            <input type="text" id="input1" placeholder="Enter a number">
+        </div>
+        <div class="input-group">
+            <label for="input2">Enter Number 2:</label>
+            <input type="text" id="input2" placeholder="Enter a number">
+        </div>
+        <div class="button-group">
+            <button onclick="performOperation('add')">Add</button>
+            <button onclick="performOperation('subtract')">Subtract</button>
+            <button onclick="performOperation('multiply')">Multiply</button>
+            <button onclick="performOperation('divide')">Divide</button>
+        </div>
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="./debug_code.js"></script>
+</body>
+</html>
