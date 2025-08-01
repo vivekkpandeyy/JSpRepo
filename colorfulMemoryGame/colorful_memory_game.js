@@ -55,6 +55,16 @@ function checkMatch() {
     if (card1.dataset.color === card2.dataset.color) {
         card1.classList.add('matched');
         card2.classList.add('matched');
+        score += 1; // Increment score by 2 for each match
+        scoreElement.textContent = `Score: ${score}`; // Update the score display
+        // Check if all cards are matched
+        if (document.querySelectorAll('.matched').length === cards.length) {
+            clearInterval(gameInterval);
+            setTimeout(() => {
+                alert(`Congratulations! You won with a score of ${score}!`);
+                startbtn.disabled = false;
+            }, 300);
+        }
     } else {
         setTimeout(() => {
             card1.style.backgroundColor = '#ddd';
